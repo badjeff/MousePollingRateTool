@@ -231,7 +231,7 @@ struct ContentView: View {
                                      with: .color(.orange.opacity(alpha)))
                     }
                 }
-                .onChange(of: timeline.date) {
+                .onChange(of: timeline.date) { _ in
                     flushPendingPoints()
                 }
             }

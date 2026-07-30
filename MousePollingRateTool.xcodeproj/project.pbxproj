@@ -3,20 +3,21 @@
     archiveVersion = 1;
     classes = {
     };
-    objectVersion = 77;
+    objectVersion = 56;
     objects = {
+
+/* Begin PBXBuildFile section */
+        4E95A4102F6D62B8005948E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95A40A2F6D62B8005948E9 /* ContentView.swift */; };
+        4E95A4112F6D62B8005948E9 /* MousePollingRateToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95A40B2F6D62B8005948E9 /* MousePollingRateToolApp.swift */; };
+        4E95A4122F6D62B8005948E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E95A40C2F6D62B8005948E9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
         4E95A3F82F6D62B7005948E9 /* MousePollingRateTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MousePollingRateTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        4E95A40A2F6D62B8005948E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        4E95A40B2F6D62B8005948E9 /* MousePollingRateToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MousePollingRateToolApp.swift; sourceTree = "<group>"; };
+        4E95A40C2F6D62B8005948E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-        4E95A3FA2F6D62B7005948E9 /* MousePollingRateTool */ = {
-            isa = PBXFileSystemSynchronizedRootGroup;
-            path = MousePollingRateTool;
-            sourceTree = "<group>";
-        };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
         4E95A3F52F6D62B7005948E9 /* Frameworks */ = {
@@ -32,7 +33,7 @@
         4E95A3EF2F6D62B7005948E9 = {
             isa = PBXGroup;
             children = (
-                4E95A3FA2F6D62B7005948E9 /* MousePollingRateTool */,
+                4E95A40D2F6D62B8005948E9 /* MousePollingRateTool */,
                 4E95A3F92F6D62B7005948E9 /* Products */,
             );
             sourceTree = "<group>";
@@ -43,6 +44,16 @@
                 4E95A3F82F6D62B7005948E9 /* MousePollingRateTool.app */,
             );
             name = Products;
+            sourceTree = "<group>";
+        };
+        4E95A40D2F6D62B8005948E9 /* MousePollingRateTool */ = {
+            isa = PBXGroup;
+            children = (
+                4E95A40A2F6D62B8005948E9 /* ContentView.swift */,
+                4E95A40B2F6D62B8005948E9 /* MousePollingRateToolApp.swift */,
+                4E95A40C2F6D62B8005948E9 /* Assets.xcassets */,
+            );
+            path = MousePollingRateTool;
             sourceTree = "<group>";
         };
 /* End PBXGroup section */
@@ -60,9 +71,6 @@
             );
             dependencies = (
             );
-            fileSystemSynchronizedGroups = (
-                4E95A3FA2F6D62B7005948E9 /* MousePollingRateTool */,
-            );
             name = MousePollingRateTool;
             packageProductDependencies = (
             );
@@ -77,11 +85,11 @@
             isa = PBXProject;
             attributes = {
                 BuildIndependentTargetsInParallel = 1;
-                LastSwiftUpdateCheck = 2630;
-                LastUpgradeCheck = 2630;
+                LastSwiftUpdateCheck = 1540;
+                LastUpgradeCheck = 1540;
                 TargetAttributes = {
                     4E95A3F72F6D62B7005948E9 = {
-                        CreatedOnToolsVersion = 26.3;
+                        CreatedOnToolsVersion = 15.0;
                     };
                 };
             };
@@ -94,7 +102,6 @@
             );
             mainGroup = 4E95A3EF2F6D62B7005948E9;
             minimizedProjectReferenceProxies = 1;
-            preferredProjectObjectVersion = 77;
             productRefGroup = 4E95A3F92F6D62B7005948E9 /* Products */;
             projectDirPath = "";
             projectRoot = "";
@@ -109,6 +116,7 @@
             isa = PBXResourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
+                4E95A4122F6D62B8005948E9 /* Assets.xcassets in Resources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
@@ -119,6 +127,8 @@
             isa = PBXSourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
+                4E95A4102F6D62B8005948E9 /* ContentView.swift in Sources */,
+                4E95A4112F6D62B8005948E9 /* MousePollingRateToolApp.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
@@ -178,7 +188,7 @@
                 GCC_WARN_UNUSED_FUNCTION = YES;
                 GCC_WARN_UNUSED_VARIABLE = YES;
                 LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-                MACOSX_DEPLOYMENT_TARGET = 26.2;
+                MACOSX_DEPLOYMENT_TARGET = 13.0;
                 MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
                 MTL_FAST_MATH = YES;
                 ONLY_ACTIVE_ARCH = YES;
@@ -235,7 +245,7 @@
                 GCC_WARN_UNUSED_FUNCTION = YES;
                 GCC_WARN_UNUSED_VARIABLE = YES;
                 LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-                MACOSX_DEPLOYMENT_TARGET = 26.2;
+                MACOSX_DEPLOYMENT_TARGET = 13.0;
                 MTL_ENABLE_DEBUG_INFO = NO;
                 MTL_FAST_MATH = YES;
                 SDKROOT = macosx;
@@ -253,7 +263,6 @@
                 CURRENT_PROJECT_VERSION = 1;
                 ENABLE_APP_SANDBOX = NO;
                 ENABLE_PREVIEWS = YES;
-                ENABLE_USER_SELECTED_FILES = readonly;
                 GENERATE_INFOPLIST_FILE = YES;
                 INFOPLIST_KEY_NSHumanReadableCopyright = "";
                 LD_RUNPATH_SEARCH_PATHS = (
@@ -263,12 +272,8 @@
                 MARKETING_VERSION = 1.0;
                 PRODUCT_BUNDLE_IDENTIFIER = "mentako-ya.MousePollingRateTool";
                 PRODUCT_NAME = "$(TARGET_NAME)";
-                REGISTER_APP_GROUPS = YES;
                 STRING_CATALOG_GENERATE_SYMBOLS = YES;
-                SWIFT_APPROACHABLE_CONCURRENCY = YES;
-                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
                 SWIFT_EMIT_LOC_STRINGS = YES;
-                SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
                 SWIFT_VERSION = 5.0;
             };
             name = Debug;
@@ -283,7 +288,6 @@
                 CURRENT_PROJECT_VERSION = 1;
                 ENABLE_APP_SANDBOX = NO;
                 ENABLE_PREVIEWS = YES;
-                ENABLE_USER_SELECTED_FILES = readonly;
                 GENERATE_INFOPLIST_FILE = YES;
                 INFOPLIST_KEY_NSHumanReadableCopyright = "";
                 LD_RUNPATH_SEARCH_PATHS = (
@@ -293,12 +297,8 @@
                 MARKETING_VERSION = 1.0;
                 PRODUCT_BUNDLE_IDENTIFIER = "mentako-ya.MousePollingRateTool";
                 PRODUCT_NAME = "$(TARGET_NAME)";
-                REGISTER_APP_GROUPS = YES;
                 STRING_CATALOG_GENERATE_SYMBOLS = YES;
-                SWIFT_APPROACHABLE_CONCURRENCY = YES;
-                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
                 SWIFT_EMIT_LOC_STRINGS = YES;
-                SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
                 SWIFT_VERSION = 5.0;
             };
             name = Release;
